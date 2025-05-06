@@ -44,6 +44,9 @@ title('Temperature Over Time');  % title
 
 %d)
 
+% data from graph
+temperatureData = [28.69, 28.69, 28.69, 28.69, 28.20, 26.25, 27.71, 25.76, 25.76, 25.76, 25.76];
+
 % Header information
 dateStr = '5/3/2024';
 locationStr = 'Nottingham';
@@ -72,6 +75,9 @@ fprintf('Average temp\t%.2f C\n\n', avgTemp);
 fprintf('Data logging terminated\n');
 
 %e)
+
+% data from graph
+temperatureData = [28.69, 28.69, 28.69, 28.69, 28.20, 26.25, 27.71, 25.76, 25.76, 25.76, 25.76];
 
 % Info
 dateStr = '5/3/2024';
