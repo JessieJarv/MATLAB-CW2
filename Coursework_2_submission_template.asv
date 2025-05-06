@@ -44,9 +44,6 @@ title('Temperature Over Time');  % title
 
 %d)
 
-% data from graph
-temperatureData = [28.69, 28.69, 28.69, 28.69, 28.20, 26.25, 27.71, 25.76, 25.76, 25.76, 25.76];
-
 % Header information
 dateStr = '5/3/2024';
 locationStr = 'Nottingham';
@@ -75,9 +72,6 @@ fprintf('Average temp\t%.2f C\n\n', avgTemp);
 fprintf('Data logging terminated\n');
 
 %e)
-
-% data from graph
-temperatureData = [28.69, 28.69, 28.69, 28.69, 28.20, 26.25, 27.71, 25.76, 25.76, 25.76, 25.76];
 
 % Info
 dateStr = '5/3/2024';
@@ -115,8 +109,22 @@ fclose(fileID);
 
 %% TASK 2 - LED TEMPERATURE MONITORING DEVICE IMPLEMENTATION [25 MARKS]
 
-% Insert answers here
+duration = 600; %total time (s)
+timeData = zeros(1, duration);
+voltageData = zeros(1, duration);
+temperatureData = zeros(1, duration);
 
+TC = 0.01; % volts per degree Celsius
+V1 = 0.5;  % voltage at 0 °C
+
+for t = 1:duration
+    voltage = readVoltage(a, 'A1'); % read voltage from sensor
+    voltageData(t) = voltage;
+    temperature = (voltage - V1) / TC;
+    temperatureData(t) = temperature;
+    timeData(t) = t; % store time in seconds
+    pause(1); % wait 1 second before next reading
+end
 
 %% TASK 3 - ALGORITHMS – TEMPERATURE PREDICTION [25 MARKS]
 
