@@ -1,10 +1,19 @@
-% Insert name here
-% Insert email address here
+% Jessica Jarvis
+% egyjj6@nottingham.ac.uk
 
 
 %% PRELIMINARY TASK - ARDUINO AND GIT INSTALLATION [10 MARKS]
 
-% Insert answers here
+while true
+    writeDigitalPin(a, 'D8', 1);   % Turn LED ON
+    pause(0.5);                    % Wait for 0.5 seconds
+    writeDigitalPin(a, 'D8', 0);   % Turn LED OFF
+    pause(0.5);                    % Wait for 0.5 seconds
+end
+
+
+
+
 
 %% TASK 1 - READ TEMPERATURE DATA, PLOT, AND WRITE TO A LOG FILE [20 MARKS]
 
