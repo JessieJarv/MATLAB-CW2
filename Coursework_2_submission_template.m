@@ -113,12 +113,43 @@ temp_monitor(a);
 
 %% TASK 3 - ALGORITHMS – TEMPERATURE PREDICTION [25 MARKS]
 
-% Insert answers here
-
+temp_prediction(a);
 
 %% TASK 4 - REFLECTIVE STATEMENT [5 MARKS]
 
-% Insert reflective statement here (400 words max)
+% During this project I had to gain an understanding in Github
+% repositories, further extend my capability in MatLab and continue to 
+% make use of loops in order to tackle tasks; such as constant temperature
+% checks and flashing the LED lights. At first learning about Github
+% appeared to be a challenge having never used it before, however by using
+% the coursework documentation and some further reading of Githubs user
+% guides, I was able to set up a repository for the project and store a
+% local version of this on my desktop. My version control skills were put
+% to the test straight away where I initialized the template file ready for
+% active work on Matlab. At first I struggled to grasp the difference
+% between commits and pushes, presenting a likely limitation on the project
+% if not tackled and so instead of jumping straight into development.
+% This turned out to be a strength of mine as I could see the value in 
+% keeping working versions of the files stored on the repository in case I 
+% needed to revert back at a later date. Firstly, I think that my approach 
+% to the function was a success but could of had some improvements.
+% The biggest improvement I suggest is that I handled all of the problem 
+% in these functions  at the time I felt as though this was good practice,
+% upon review potentially in my function I handle some parts of the 
+% approach  and data that should have otherwise been external to the 
+% function and instead parsed in, such as the temperature calculations in
+% task 3. This was an oversight at the time, which I would straighten out 
+% should I carry out an improvements on the system. Strictly only the 
+% temperature prediction would be handled, returning a value for the main 
+% template to then handle and output to the user. 
+% My biggest weakness during the project was in commenting and documenting 
+% the code. Instead of doing this as I wrote new code it was something I 
+% overlooked and tried to then do at the end. With functions being written 
+% over numerous days or hours, I would sometimes get confused with what I 
+% had coded prior and have to take time to work it out, or rewrite it. 
+% This was something I realized as I came to the end of the project and 
+% will take forward into any future Matlab/coding exercises I am tasked 
+% with.
 
 
 %% TASK 5 - COMMENTING, VERSION CONTROL AND PROFESSIONAL PRACTICE [15 MARKS]
