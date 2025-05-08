@@ -50,13 +50,13 @@ function temp_prediction(a)
 
         % Calculate rate of change
         if length(temperatureHistory) >= 5
-            historyLength = length(temperatureHistory)
+            historyLength = length(temperatureHistory);
             
             % Get the last 10 redings
             if historyLength > 10
                 readings = (historyLength - 9):historyLength;
             else
-                readings = 1:historyLength
+                readings = 1:historyLength;
             end
 
             % Get tge dy for differentiating

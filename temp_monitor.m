@@ -1,6 +1,5 @@
 function temp_monitor(a)
 %TEMP_MONITOR Summary of this function goes here
-%   Detailed explanation goes here
 % This function reads temperature data from an analog pin of the Arduino,
 % updates a live graph, and blinks LEDs based on the temperature range.
 % - Green LED: 18–24 °C (constant ON)
